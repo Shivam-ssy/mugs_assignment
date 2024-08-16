@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color:#FD6F00;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+#close:checked+#nav-part{
+  display:block;
+}
+#nav-part{
+  display: none;
+}
+
+
+
+@media (min-width: 766px) {
+  #nav-part {
+      display: block; 
+  }
+
+  
+  #close {
+      display: none;
+  }
+
+  /* Hide the label (menu icon) on larger screens */
+  label[for="close"] {
+      display: none;
+  }
+}
